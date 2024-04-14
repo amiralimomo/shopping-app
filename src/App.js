@@ -1,22 +1,29 @@
 
-import './App.css';
-import { QueryClient,QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { useEffect } from 'react';
-
-import {Home} from "./components/home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
+import { Header } from "./components/header";
 function App() {
 
-  const client=new QueryClient();
- 
-useEffect(()=>{
+  const client = new QueryClient();
 
-},[])
+  useEffect(() => {
+
+  }, [])
   return (
-    <div className="App">
-      <QueryClientProvider client={client}>
-        <Home/>
-      </QueryClientProvider>
-    </div>
+
+    <QueryClientProvider client={client}>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+
+        </Routes>
+      </Router>
+    </QueryClientProvider>
+
   );
 }
 
