@@ -1,6 +1,8 @@
 .header {
   height: 7rem;
   border-bottom: 1px solid black;
+  position: relative;
+  z-index: 1;
 }
 .header-search {
   position: relative;
@@ -30,7 +32,7 @@
   margin-right: 0.5rem;
 }
 .header-sign-in-out-button {
-    position: relative;
+  position: relative;
   background-color: transparent;
   border: 1px solid black;
   width: 9rem;
@@ -38,9 +40,69 @@
   color: black;
   border-radius: 4px;
 }
-.header-user{
-    display: none;
+.header-user {
+  display: none;
 }
+.ul-header {
+  position: relative;
+}
+.ul-header > li {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: gray;
+  cursor: pointer;
+}
+.header-category-li {
+  color: black !important;
+
+  position: static;
+}
+.header-category-icon {
+  padding-right: 0.3rem;
+  font-size: 1rem;
+}
+.header-category-dropdown {
+  z-index: 100;
+  position: absolute;
+  top: 1.4rem;
+  left: 0rem;
+  right: 0rem;
+
+  height: 20rem;
+  background-color: #000000c2;
+  animation: dropdown .3s normal;
+}
+
+.header-border-style {
+  position: relative;
+  border: none;
+  background: none;
+  /* text-transform: uppercase; */
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.header-border-style:focus:after,
+.header-border-style:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.header-border-style:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     height: 4rem;
@@ -52,7 +114,6 @@
   .cart-button {
     width: 3rem;
     margin-right: 0.5rem;
- 
   }
   .header-sign-in-out-button {
     height: 43.2px;
@@ -61,11 +122,20 @@
   .header-button-responsive {
     display: none;
   }
-  .header-user{
+  .header-user {
     display: block;
     font-size: 1.5rem;
     position: absolute;
-    left: .7rem;
-    top: .2rem;
+    left: 0.7rem;
+    top: 0.2rem;
+  }
 }
+@keyframes dropdown {
+  0% {
+    top: 1.7rem;
+    opacity: 0;
+    }
+
+  100%{  top: 1.4rem;
+    opacity: 1;}
 }
