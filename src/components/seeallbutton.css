@@ -1,0 +1,12 @@
+.see-all-body{
+    background-color: white;
+    width: 7rem;
+    padding: .5rem .7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.see-all-button{
+background-color: white;
+border: none;
+
+}

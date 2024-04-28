@@ -5,7 +5,10 @@ export const Header = () => {
     const categoryListHandler = (toggle) => {
         setcategoryToggle(toggle);
     }
-    return (<header className="header w-100">
+    return (<header className="header w-100 
+
+    shadow-lg
+    ">
         <div className="container h-100 pt-2 pb-2">
 
             <div className="d-flex justify-content-between align-items-center h-75">

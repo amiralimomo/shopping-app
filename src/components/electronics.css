@@ -1,0 +1,102 @@
+.fancy {
+  background-color: #f93423;
+  /* width: 500px; */
+  position: absolute;
+  top: -4rem;
+  bottom: 0;
+  left: 0;
+  right: 60%;
+  border-radius: 48% 52% 50% 50% / 0% 100% 0% 100%;
+  z-index: -1;
+}
+.electronics-swiper-body{
+  background-color: rgb(240, 240, 240);
+  margin: 5rem 0 2rem 2rem;
+  position: relative;
+  height: 22rem;
+  border-radius: 12px;
+  height: fit-content;
+  /* box-shadow: 2px 3px 14px -2px rgba(0, 0, 0, 0.425); */
+}
+.electronics-body {
+  height: fit-content;
+}
+.electronics-title {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.electronic-swiper {
+  /* flex-grow: 1; */
+  width: 65%;
+  min-width: 20rem;
+}
+.electronic-swiper-child {
+  width: 30% !important;
+  height: 355px;
+}
+.electronic-swiper-child > div {
+  display: flex;
+  flex-direction: column;
+  
+}
+.electronic-swiper-childs .swiper-slide {
+  height: 100px;
+}
+.electronic-swiper-children {
+  width: 100% !important;
+  height: 7rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .fancy {
+    width: 330px;
+    height: 14rem;
+  }
+  .electronics-child {
+    margin: 4rem 0 0 0;
+  }
+  .electronics-swiper-body{
+    
+    margin: 2rem 0 2rem 0;
+   
+  }
+  .electronic-swiper-child {
+    margin: 2rem 0;
+    width: 100% !important;
+    height: 242px;
+  }
+  .electronic-swiper {
+ 
+  height: 28rem;
+  }
+  .electronic-swiper-children{
+    height: 4.5rem !important;
+  }
+}

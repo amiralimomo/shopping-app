@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Header } from "./components/header";
+import { Footer } from "./components/footer";
+
 function App() {
 
   const client = new QueryClient();
@@ -21,6 +23,7 @@ function App() {
 
 
         </Routes>
+        <Footer/>
       </Router>
     </QueryClientProvider>
 

@@ -1,0 +1,13 @@
+.cheapest-products-body {
+  background-color: #f93423;
+  border-radius: 1rem;
+  min-height: 20rem;
+}
+.offer-img {
+  width: 10rem;
+}
+.cheapest-products-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}

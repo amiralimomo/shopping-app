@@ -1,6 +1,6 @@
 .header {
   height: 7rem;
-  border-bottom: 1px solid black;
+  /* box-shadow: 5px 2px 19px 0 #888; */
   position: relative;
   z-index: 1;
 }
@@ -23,7 +23,7 @@
   padding: 1rem 1rem 1rem 3rem;
 }
 .cart-button {
-  background-color: rgba(54, 221, 137, 0.596);
+  background-color: #1bd2a3;
   border: none;
   padding: 0.6rem 1.3rem;
   color: white;
